@@ -2,7 +2,7 @@ import { Router, Request, Response } from "express";
 import { UserModel } from "../Db/userDb";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "../config";
+import { JWT_SECRET } from "@repo/backend-common/common-config";
 import { authMiddleware, AuthRequest } from "../middleware/auth";
 import { RoomModel } from "../Db/roomDb";
 
